@@ -8,6 +8,8 @@ import com.mentro.mentro.Models.Jobs.Job;
 
 public interface JobRepository extends JpaRepository<Job, Integer> {
 
-    List<Job> findByJobTitle(String jobTitle);
+    // List<Job> findByJobTitle(String jobTitle);
+
+    List<Job> findByJobTitleContainingIgnoreCase(String jobTitle);
 
 }

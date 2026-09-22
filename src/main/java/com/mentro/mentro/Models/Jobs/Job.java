@@ -25,6 +25,6 @@ public class Job {
     private int jobPrice;
     private int jobDuration;
     private int jobSlots;
-    private int jobStatus;
+    private String jobStatus;
 
 }

@@ -30,7 +30,7 @@ public class JobService {
     }
 
     public List<Job> getByNames(String jobTitle) {
-        return repository.findByJobTitle(jobTitle);
+        return repository.findByJobTitleContainingIgnoreCase(jobTitle);
     }
 
 }
