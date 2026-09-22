@@ -14,7 +14,7 @@ import lombok.Data;
 @Data
 @Table(name = "Jobs")
 public class Job {
-    @ManyToOne 
+    @ManyToOne
     private TeacherProfile teacher;
 
     @Id
